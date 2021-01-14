@@ -7,6 +7,18 @@ Participants can use the smartphone application to record sensor data while trav
 This repository contains code for both the smartphone application and the data-collection server. 
 
 
+## Smartphone application
+
+The application was coded using the [flutter framework](https://flutter.dev/) for both Android and iOS. See the `./smartphone-app` directory for more information.
+
+<img src="docs/images/00-consent.png" width=200> <img src="docs/images/01-mode.png" width=200> <img src="docs/images/02-trip.png" width=200> <img src="docs/images/03-confirmation.png" width=200> <img src="docs/images/04-settings.png" width=200> <img src="docs/images/05-explorer.png" width=200>
+
+
+
+## Data collection server
+
+The server is coded in python 3 using [FastAPI](https://fastapi.tiangolo.com/). SSL encryption is handled by [traefik](https://containo.us/traefik/). Orchestration is done with [docker compose](https://docs.docker.com/compose/). See the `./server` directory for more information.
+
 
 ## Files organization
 
@@ -42,21 +54,6 @@ Run server.
 cd server
 docker-compose up
 ```
-
-
-
-## Smartphone application
-
-The application was coded using the [flutter framework](https://flutter.dev/) for both Android and iOS. See the `./smartphone-app` directory for more information.
-
-<img src="docs/images/00-consent.png" width=200> <img src="docs/images/01-mode.png" width=200> <img src="docs/images/02-trip.png" width=200> <img src="docs/images/03-confirmation.png" width=200> <img src="docs/images/04-settings.png" width=200> <img src="docs/images/05-explorer.png" width=200>
-
-
-
-## Data collection server
-
-The server is coded in python 3 using [FastAPI](https://fastapi.tiangolo.com/). SSL encryption is handled by [traefik](https://containo.us/traefik/). Orchestration is done with [docker compose](https://docs.docker.com/compose/). See the `./server` directory for more information.
-
 
 
 ## Authors
